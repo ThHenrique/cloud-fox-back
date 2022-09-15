@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx nodemon --exec ts-node --files src/index.ts",
-    "typeorm": "typeorm-ts-node-commonjs -d ./src/data-source.ts",
+    "typeorm": "npx typeorm-ts-node-esm migration:run -d ./src/data-source.ts",
     "test": "vitest"
   },
   "devDependencies": {
