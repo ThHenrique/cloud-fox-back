@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Running migration
-        run: npm run typeorm migration:run -d ./src/data-source.ts
+        run: npm run typeorm migration:run --dataSource ./src/data-source.ts
 
       - name: Run tests
         run: npm test
