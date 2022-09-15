@@ -3,9 +3,9 @@ on: [push]
 jobs:
   docker:
     env:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: api_iv
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: api_iv
     timeout-minutes: 10
     runs-on: ubuntu-latest
 
